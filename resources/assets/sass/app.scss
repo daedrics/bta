@@ -1,0 +1,17 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Muli");
+// Variables
+@import "variables";
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+@import "navbar/navbar";
+@import "navbar/dropdown";
+@import "navbar/sidemenu";
+
+body {
+  position: relative;
+}
+
+.app {
+  font-family: "Muli", sans-serif;
+}

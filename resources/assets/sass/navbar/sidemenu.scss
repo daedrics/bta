@@ -1,0 +1,85 @@
+
+.overlay, .sideMenu {
+  position: fixed;
+  bottom: 0;
+}
+
+.overlay {
+  top: 0;
+  right: -100%;
+  left: 100%;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1005;
+  transition: all ease 0.5s;
+}
+
+.overlay.open {
+  left: 0;
+  right: 0;
+}
+
+.sideMenu {
+  right: -100%;
+  top: 0;
+  transition: all ease 0.8s;
+  width: 100%;
+  z-index: 1008;
+  max-width: 70%;
+  margin-bottom: 0;
+  padding: 1rem;
+}
+
+.sideMenu.open {
+  right: 0;
+  display: block;
+}
+
+.sideMenu ul {
+  margin: 0;
+  padding: 0 15px;
+}
+
+.sideMenu ul > li > a {
+  color: #37424f !important;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  text-align: left;
+}
+
+.sideMenu h2 {
+  color: #37424f;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.sub-nav li > a {
+  color: #37424F !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  line-height: 17px !important;
+  text-align: left !important;
+}
+
+.close-box {
+  background-color: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0 4px 18px 0 rgba(46, 50, 128, 0.07999999821186066);
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 22px;
+  left: -28px;
+}
+
+.close-box button {
+  margin: 0;
+  opacity: 1;
+}
+
+.close-box button span {
+  color: black;
+}
+
